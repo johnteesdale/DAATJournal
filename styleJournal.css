@@ -15,6 +15,9 @@ img {
   list-style-type: none;
   margin: 0px;
 }
+#week1 {
+  margin: 40px;
+}
 .left {
 width: 50%;
 float: left;
