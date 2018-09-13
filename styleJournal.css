@@ -7,7 +7,7 @@ body {
 a {
   color: #8C9B56;
 }
-img {
+.resize {
   width: 300px;
   height: 300px;
 }
