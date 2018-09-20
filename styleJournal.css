@@ -24,9 +24,6 @@ h1 {
   padding: 10px;
   box-shadow: 10px 15px #888888;
 }
-#week1 {
-  margin: 40px;
-}
 .left {
 float: left;
 color: white;
@@ -42,6 +39,7 @@ float: right;
   border-width: 5px;
   padding: 20px;
   box-shadow: 10px 15px #888888;
+  margin: 40px;
 }
 .navItem {
   margin: 30px;
