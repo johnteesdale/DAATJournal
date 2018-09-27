@@ -45,3 +45,7 @@ float: right;
   margin: 30px;
   background-size:
 }
+.resize2 {
+  width: 400px;
+  height: 100%;
+}
