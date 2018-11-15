@@ -5,198 +5,218 @@ $(document).ready(function(){
   var videoMargin = ((windowWidth-1100)/2);
 
   function setVideoSize(){
-    var windowWidth2 = $(window).width();
-    var videoMargin = ((windowWidth2-1100)/2);
-    $("#video").css("left", videoMargin);
-    console.log(videoMargin);
-    return[videoMargin];
+    var videoWidth = $(window).width();
+    console.log(videoWidth);
+    var videoHeight = Math.floor(videoWidth/1.77);
+    $("iframe").css({"width": videoWidth, "height": videoHeight})
+    return["work"];
   };
 
+  function close(){
+  $("#closeVideo").fadeIn(300)
+  };
+
+  function closeVideo(){
+    setTimeout(close, 105000);
+    console.log("work");
+    return["work"];
+  };
+
+  setVideoSize();
+
   $("#customLogo").click(function(){
-    $("iframe").css({"z-index": "10", "opacity": "1"});
+    $("iframe").fadeIn(300);
+    closeVideo();
     console.log("work");
   });
 
+  $("#closeVideo").click(function(){
+    $("iframe").fadeOut(300);
+    $("#closeVideo").fadeOut(300);
+    console.log("work");
+  })
+
   $("#image1").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image1Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image1Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#image2").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image2Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image2Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#image3").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image3Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image3Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#image4").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image4Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image4Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#image5").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image5Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image5Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#image6").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image6Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image6Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#image7").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image7Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image7Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#image8").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image8Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image8Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#image9").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image9Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image9Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#image10").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image10Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image10Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#image11").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image11Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image11Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#image12").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
-    $("#image12Large").css({"display": "block", "position": "absolute", "margin-left": lightboxMargin, "opacity": "1"});
-    $("#close").css("display", "block");
+    $("#image12Large").fadeIn(300);
+    $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
   $("#close").click(function(){
     $("#lightboxBackground").css("opacity", "1");
-    $("#image1Large").css("display", "none");
-    $("#image2Large").css("display", "none");
-    $("#image3Large").css("display", "none");
-    $("#image4Large").css("display", "none");
-    $("#image5Large").css("display", "none");
-    $("#image6Large").css("display", "none");
-    $("#image7Large").css("display", "none");
-    $("#image8Large").css("display", "none");
-    $("#image9Large").css("display", "none");
-    $("#image10Large").css("display", "none");
-    $("#image11Large").css("display", "none");
-    $("#image12Large").css("display", "none");
-    $("#close").css("display", "none");
+    $("#image1Large").fadeOut(300);
+    $("#image2Large").fadeOut(300);
+    $("#image3Large").fadeOut(300);
+    $("#image4Large").fadeOut(300);
+    $("#image5Large").fadeOut(300);
+    $("#image6Large").fadeOut(300);
+    $("#image7Large").fadeOut(300);
+    $("#image8Large").fadeOut(300);
+    $("#image9Large").fadeOut(300);
+    $("#image10Large").fadeOut(300);
+    $("#image11Large").fadeOut(300);
+    $("#image12Large").fadeOut(300);
+    $("#close").fadeOut(300);
+    $("iframe").fadeOut(300);
   });
 
   function hideJournals(){
-    $("#week1").css("display", "none");
-    $("#week2").css("display", "none");
-    $("#week3").css("display", "none");
-    $("#week4").css("display", "none");
-    $("#week5").css("display", "none");
-    $("#week6").css("display", "none");
-    $("#week7").css("display", "none");
-    $("#week8").css("display", "none");
-    $("#week9").css("display", "none");
-    $("#week10").css("display", "none");
-    $("#week11").css("display", "none");
-    $("#week12").css("display", "none");
-    $("#week13").css("display", "none");
+    $("#week1").hide();
+    $("#week2").hide();
+    $("#week3").hide();
+    $("#week4").hide();
+    $("#week5").hide();
+    $("#week6").hide();
+    $("#week7").hide();
+    $("#week8").hide();
+    $("#week9").hide();
+    $("#week10").hide();
+    $("#week11").hide();
+    $("#week12").hide();
+    $("#week13").hide();
   }
 
   $("#week1Link").click(function(){
     hideJournals();
-    $("#week1").css("display", "inline-block");
+    $("#week1").show();
     console.log("work");
   });
 
   $("#week2Link").click(function(){
     hideJournals();
-    $("#week2").css("display", "inline-block");
+    $("#week2").show();
     console.log("work");
   });
 
   $("#week3Link").click(function(){
     hideJournals();
-    $("#week3").css("display", "inline-block");
+    $("#week3").show();
     console.log("work");
   });
 
   $("#week4Link").click(function(){
     hideJournals();
-    $("#week4").css("display", "inline-block");
+    $("#week4").show();
     console.log("work");
   });
 
   $("#week5Link").click(function(){
     hideJournals();
-    $("#week5").css("display", "inline-block");
+    $("#week5").show();
     console.log("work");
   });
 
   $("#week6Link").click(function(){
     hideJournals();
-    $("#week6").css("display", "inline-block");
+    $("#week6").show();
     console.log("work");
   });
 
   $("#week7Link").click(function(){
     hideJournals();
-    $("#week7").css("display", "inline-block");
+    $("#week7").show();
     console.log("work");
   });
 
   $("#week8Link").click(function(){
     hideJournals();
-    $("#week8").css("display", "inline-block");
+    $("#week8").show();
     console.log("work");
   });
 
   $("#week9Link").click(function(){
     hideJournals();
-    $("#week9").css("display", "inline-block");
+    $("#week9").show();
     console.log("work");
   });
 
   $("#week10Link").click(function(){
     hideJournals();
-    $("#week10").css("display", "inline-block");
+    $("#week10").show();
     console.log("work");
   });
 
   $("#week11Link").click(function(){
     hideJournals();
-    $("#week11").css("display", "inline-block");
+    $("#week11").show();
     console.log("work");
   });
 
