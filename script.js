@@ -173,54 +173,63 @@ $(document).ready(function(){
   $("#week1Link").click(function(){
     hideJournals();
     $("#week1").show();
+    $("#week1Link").css("color", "#c2882c");
     console.log("work");
   });
 
   $("#week2Link").click(function(){
     hideJournals();
     $("#week2").show();
+    $("#week2Link").css("color", "#c2882c");
     console.log("work");
   });
 
   $("#week3Link").click(function(){
     hideJournals();
     $("#week3").show();
+    $("#week3Link").css("color", "#c2882c");
     console.log("work");
   });
 
   $("#week4Link").click(function(){
     hideJournals();
     $("#week4").show();
+    $("#week4Link").css("color", "#c2882c");
     console.log("work");
   });
 
   $("#week5Link").click(function(){
     hideJournals();
     $("#week5").show();
+    $("#week5Link").css("color", "#c2882c");
     console.log("work");
   });
 
   $("#week6Link").click(function(){
     hideJournals();
     $("#week6").show();
+    $("#week6Link").css("color", "#c2882c");
     console.log("work");
   });
 
   $("#week7Link").click(function(){
     hideJournals();
     $("#week7").show();
+    $("#week7Link").css("color", "#c2882c");
     console.log("work");
   });
 
   $("#week8Link").click(function(){
     hideJournals();
     $("#week8").show();
+    $("#week8Link").css("color", "#c2882c");
     console.log("work");
   });
 
   $("#week9Link").click(function(){
     hideJournals();
     $("#week9").show();
+    $("#week9Link").css("color", "#c2882c");
     console.log("work");
   });
 
