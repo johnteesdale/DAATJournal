@@ -39,6 +39,10 @@ li {
   line-height: 2em;
 }
 
+h3:hover {
+  color: #c2882c;
+}
+
 #content {
   max-width: 1200px;
   margin: auto;
@@ -96,13 +100,92 @@ li {
 
 .journalEntry {
   display: none;
+  margin-left: 100px;
 }
 
 #blogLinks {
-  margin-top: 3000px
+  display: inline-block;
   padding: 0px;
 }
 
 .test {
   margin-top: 150px;
+}
+
+#photoThumbnails {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 100px;
+  display: block;
+}
+
+.thumbnail {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  float: left;
+  margin: 15px 30px;
+  border: solid white 5px;
+}
+
+#image5 {
+  clear: left;
+}
+
+#image9 {
+  clear: left;
+}
+
+#close {
+  display: none;
+  position: absolute;
+  top: 30%
+  right: 20%;
+  cursor: pointer;
+}
+
+.lightbox {
+  display: none;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+  border: solid white 10px;
+  max-height: 600px;
+}
+
+#blog h3 {
+
+}
+
+iframe {
+  z-index: -5;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  opacity: 0;
+}
+
+.resize {
+  width: 300px;
+  height: 300px;
+}
+
+#photoGallery img {
+  cursor: pointer;
+}
+
+.resize2 {
+  width: 200px;
+}
+
+.left {
+margin-top: 90px;
+float: left;
+height: 100%;
+}
+.right {
+margin-top: 90px;
+width: 70%;
+float: left;
 }
