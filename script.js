@@ -38,6 +38,7 @@ $(document).ready(function(){
 
   $("#image1").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image1Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
@@ -45,6 +46,7 @@ $(document).ready(function(){
 
   $("#image2").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image2Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
@@ -52,6 +54,7 @@ $(document).ready(function(){
 
   $("#image3").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image3Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
@@ -59,6 +62,7 @@ $(document).ready(function(){
 
   $("#image4").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image4Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
@@ -66,6 +70,7 @@ $(document).ready(function(){
 
   $("#image5").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image5Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
@@ -73,6 +78,7 @@ $(document).ready(function(){
 
   $("#image6").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image6Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
@@ -80,6 +86,7 @@ $(document).ready(function(){
 
   $("#image7").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image7Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
@@ -87,6 +94,7 @@ $(document).ready(function(){
 
   $("#image8").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image8Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
@@ -94,6 +102,7 @@ $(document).ready(function(){
 
   $("#image9").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image9Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
@@ -101,6 +110,7 @@ $(document).ready(function(){
 
   $("#image10").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image10Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
@@ -108,6 +118,7 @@ $(document).ready(function(){
 
   $("#image11").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image11Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
@@ -115,13 +126,13 @@ $(document).ready(function(){
 
   $("#image12").click(function(){
     $("#lightboxBackground").css({"opacity": ".3"});
+    closeLightbox();
     $("#image12Large").fadeIn(300);
     $("#close").fadeIn(300);
     console.log(lightboxMargin);
   });
 
-  $("#close").click(function(){
-    $("#lightboxBackground").css("opacity", "1");
+  function closeLightbox() {
     $("#image1Large").fadeOut(300);
     $("#image2Large").fadeOut(300);
     $("#image3Large").fadeOut(300);
@@ -134,6 +145,11 @@ $(document).ready(function(){
     $("#image10Large").fadeOut(300);
     $("#image11Large").fadeOut(300);
     $("#image12Large").fadeOut(300);
+  };
+
+  $("#close").click(function(){
+    $("#lightboxBackground").css("opacity", "1");
+    closeLightbox();
     $("#close").fadeOut(300);
     $("iframe").fadeOut(300);
   });
