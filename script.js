@@ -5,7 +5,7 @@ $(document).ready(function(){
   var videoMargin = ((windowWidth-1100)/2);
 
   function setVideoSize(){
-    var videoWidth = $(window).width();
+    var videoWidth = ($(window).width())*.9;
     console.log(videoWidth);
     var videoHeight = Math.floor(videoWidth/1.77);
     $("iframe").css({"width": videoWidth, "height": videoHeight})
@@ -17,7 +17,7 @@ $(document).ready(function(){
   };
 
   function closeVideo(){
-    setTimeout(close, 105000);
+    setTimeout(close, 3000);
     console.log("work");
     return["work"];
   };
@@ -173,6 +173,7 @@ $(document).ready(function(){
   $("#week1Link").click(function(){
     hideJournals();
     $("#week1").show();
+    $(".navItem").css("color", "white");
     $("#week1Link").css("color", "#c2882c");
     console.log("work");
   });
@@ -180,6 +181,7 @@ $(document).ready(function(){
   $("#week2Link").click(function(){
     hideJournals();
     $("#week2").show();
+    $(".navItem").css("color", "white");
     $("#week2Link").css("color", "#c2882c");
     console.log("work");
   });
@@ -187,6 +189,7 @@ $(document).ready(function(){
   $("#week3Link").click(function(){
     hideJournals();
     $("#week3").show();
+    $(".navItem").css("color", "white");
     $("#week3Link").css("color", "#c2882c");
     console.log("work");
   });
@@ -194,6 +197,7 @@ $(document).ready(function(){
   $("#week4Link").click(function(){
     hideJournals();
     $("#week4").show();
+    $(".navItem").css("color", "white");
     $("#week4Link").css("color", "#c2882c");
     console.log("work");
   });
@@ -201,6 +205,7 @@ $(document).ready(function(){
   $("#week5Link").click(function(){
     hideJournals();
     $("#week5").show();
+    $(".navItem").css("color", "white");
     $("#week5Link").css("color", "#c2882c");
     console.log("work");
   });
@@ -208,6 +213,7 @@ $(document).ready(function(){
   $("#week6Link").click(function(){
     hideJournals();
     $("#week6").show();
+    $(".navItem").css("color", "white");
     $("#week6Link").css("color", "#c2882c");
     console.log("work");
   });
@@ -215,6 +221,7 @@ $(document).ready(function(){
   $("#week7Link").click(function(){
     hideJournals();
     $("#week7").show();
+    $(".navItem").css("color", "white");
     $("#week7Link").css("color", "#c2882c");
     console.log("work");
   });
@@ -222,6 +229,7 @@ $(document).ready(function(){
   $("#week8Link").click(function(){
     hideJournals();
     $("#week8").show();
+    $(".navItem").css("color", "white");
     $("#week8Link").css("color", "#c2882c");
     console.log("work");
   });
@@ -229,6 +237,7 @@ $(document).ready(function(){
   $("#week9Link").click(function(){
     hideJournals();
     $("#week9").show();
+    $(".navItem").css("color", "white");
     $("#week9Link").css("color", "#c2882c");
     console.log("work");
   });

@@ -148,9 +148,13 @@ h3:hover {
   z-index: 10;
   display: none;
   position: absolute;
-  top: 45%;
-  left: 40%;
+  top: 10%;
+  right: 0%;
   cursor: pointer;
+}
+
+#video {
+
 }
 
 .lightbox {
@@ -174,6 +178,7 @@ iframe {
   position: absolute;
   top: 0px;
   left: 0px;
+  margin: auto;
 }
 
 .resize {
