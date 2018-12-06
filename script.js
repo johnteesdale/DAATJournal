@@ -36,101 +36,21 @@ $(document).ready(function(){
     console.log("work");
   })
 
-  $("#image1").click(function(){
+  $(".thumbnail").click(function(){
+    var imageId = $(this).attr("id");
+    var n = $(this).attr("imageId");
     $("#lightboxBackground").css({"opacity": ".3"});
     closeLightbox();
-    $("#image1Large").fadeIn(300);
+    $("#"+imageId+"Large").fadeIn(300);
     $("#close").fadeIn(300);
+    $("#next").fadeIn(300);
+    $("#previous").fadeIn(300);
     console.log(lightboxMargin);
+    console.log(imageId);
+    console.log(n);
   });
 
-  $("#image2").click(function(){
-    $("#lightboxBackground").css({"opacity": ".3"});
-    closeLightbox();
-    $("#image2Large").fadeIn(300);
-    $("#close").fadeIn(300);
-    console.log(lightboxMargin);
-  });
 
-  $("#image3").click(function(){
-    $("#lightboxBackground").css({"opacity": ".3"});
-    closeLightbox();
-    $("#image3Large").fadeIn(300);
-    $("#close").fadeIn(300);
-    console.log(lightboxMargin);
-  });
-
-  $("#image4").click(function(){
-    $("#lightboxBackground").css({"opacity": ".3"});
-    closeLightbox();
-    $("#image4Large").fadeIn(300);
-    $("#close").fadeIn(300);
-    console.log(lightboxMargin);
-  });
-
-  $("#image5").click(function(){
-    $("#lightboxBackground").css({"opacity": ".3"});
-    closeLightbox();
-    $("#image5Large").fadeIn(300);
-    $("#close").fadeIn(300);
-    console.log(lightboxMargin);
-  });
-
-  $("#image6").click(function(){
-    $("#lightboxBackground").css({"opacity": ".3"});
-    closeLightbox();
-    $("#image6Large").fadeIn(300);
-    $("#close").fadeIn(300);
-    console.log(lightboxMargin);
-  });
-
-  $("#image7").click(function(){
-    $("#lightboxBackground").css({"opacity": ".3"});
-    closeLightbox();
-    $("#image7Large").fadeIn(300);
-    $("#close").fadeIn(300);
-    console.log(lightboxMargin);
-  });
-
-  $("#image8").click(function(){
-    $("#lightboxBackground").css({"opacity": ".3"});
-    closeLightbox();
-    $("#image8Large").fadeIn(300);
-    $("#close").fadeIn(300);
-    console.log(lightboxMargin);
-  });
-
-  $("#image9").click(function(){
-    $("#lightboxBackground").css({"opacity": ".3"});
-    closeLightbox();
-    $("#image9Large").fadeIn(300);
-    $("#close").fadeIn(300);
-    console.log(lightboxMargin);
-  });
-
-  $("#image10").click(function(){
-    $("#lightboxBackground").css({"opacity": ".3"});
-    closeLightbox();
-    $("#image10Large").fadeIn(300);
-    $("#close").fadeIn(300);
-    console.log(lightboxMargin);
-  });
-
-  $("#image11").click(function(){
-    $("#lightboxBackground").css({"opacity": ".3"});
-    closeLightbox();
-    $("#image11Large").fadeIn(300);
-    $("#close").fadeIn(300);
-    console.log(lightboxMargin);
-  });
-
-  $("#image12").click(function(){
-    $("#lightboxBackground").css({"opacity": ".3"});
-    closeLightbox();
-    $("#image12Large").fadeIn(300);
-    $("#close").fadeIn(300);
-    console.log(lightboxMargin);
-  });
 
   function closeLightbox() {
     $("#image1Large").fadeOut(300);
@@ -152,7 +72,44 @@ $(document).ready(function(){
     closeLightbox();
     $("#close").fadeOut(300);
     $("iframe").fadeOut(300);
+    $("#next").fadeOut(300);
+    $("#previous").fadeOut(300);
   });
+
+
+  $("#next").click(function(){
+    $("#lightboxBackground").css("opacity", "1");
+    closeLightbox();
+    $("#close").fadeOut(300);
+    $("iframe").fadeOut(300);
+    var jf = $(".thumbnail").css("display");
+    console.log(jf);
+  });
+
+  $(".lightbox").click(function(){
+    var n = $(this).attr("imageId");
+    console.log(n);
+    n = parseInt(n);
+    console.log('parsework');
+    $("#image"+n+"Large").fadeOut(300);
+    n = n+1;
+    console.log(n);
+    $("#image"+n+"Large").fadeIn(300);
+    if (n = 11){
+      n = 1;
+    }
+  });
+
+  /*function imageNumber() {
+    $(".thumbnail").click(function(){
+      var n = $(this).attr("imageId");
+      var jf = $(".thumbnail").css("display");
+      console.log(jf);
+      console.log(n);
+      return n;
+    });
+    return fuck;
+  }*/
 
   function hideJournals(){
     $("#week1").hide();
