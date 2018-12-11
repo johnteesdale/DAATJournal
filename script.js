@@ -211,4 +211,10 @@ $(document).ready(function(){
     console.log("work");
   });
 
+  $("#week12Link").click(function(){
+    hideJournals();
+    $("#week12").show();
+    console.log("work");
+  });
+
 });
